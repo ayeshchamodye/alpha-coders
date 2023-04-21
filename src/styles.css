@@ -1,0 +1,122 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.ul {
+  list-style-type: none;
+}
+
+header {
+  padding: 20px 20px;
+  width: 100%;
+  background: #172b4d;
+  height: min-content;
+}
+.sidenav {
+  margin-left: 8px;
+  width: 150px;
+  background: #172b4d;
+  position: absolute;
+  height: 95vh;
+  padding: 0 30px;
+  transition: 2s ease;
+  left: -100%;
+}
+.sidenav.active {
+  left: 0%;
+}
+ul {
+  padding: 0;
+  align-items: center;
+}
+ul li {
+  list-style-type: none;
+  margin: 10px 10px;
+  align-content: center;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+a {
+  cursor: pointer;
+}
+
+header svg {
+  font: size 80px;
+  color: white;
+  margin-left: 2px;
+  margin-right: 98%;
+}
+
+@media (max-width: 980px) {
+  .menu {
+    visibility: visible;
+  }
+  .headernav {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 980px) {
+  .menu {
+    visibility: hidden;
+  }
+  .sidenav.active {
+    left: -100%;
+  }
+  .head h3 {
+  }
+  .headernav {
+    display: flex;
+  }
+}
+
+.headernav li {
+  left: 400px;
+  text-align: center;
+}
+.nav-link {
+  align-content: center;
+}
+.head {
+  height: 50px;
+}
+.head ul {
+  display: flex;
+}
+
+.head h3 {
+  width: max-content;
+  font-size: 2vw;
+  height: 15px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.nav-link {
+  margin-left: 400px;
+  align-content: center;
+}
+.nav-link li {
+  width: 100px;
+}
