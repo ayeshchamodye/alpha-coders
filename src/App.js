@@ -2,6 +2,7 @@ import "./styles.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Navbar from "./components/Navbar";
 import Title from "./components/Title";
+import Serv from "./components/Serv";
 import scrollX from "react-native";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -29,7 +30,9 @@ export default function App() {
             </ul>
           </div>
         </header>
-        {showNav && <Navbar />}
+
+        <div>{showNav && <Navbar />}</div>
+        <Serv />
       </scrollY>
     </div>
   );

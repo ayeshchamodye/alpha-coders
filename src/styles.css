@@ -33,6 +33,7 @@ header {
   position: absolute;
   left: -15%;
   width: 100%;
+  z-index: 10;
   height: 100%;
   background: #172b4d86;
   @extend .dflex;

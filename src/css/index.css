@@ -1,0 +1,137 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    max-height: 100%;
+    background:  #ffffff;
+}
+
+.maintitle h2{
+  font-family: georgia;
+ margin-top: 20px;
+  padding: 0;
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #012970;
+  cursor: pointer;
+}
+
+ .service{
+  position: static;
+  width: 100%;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin-top: 1%;
+}
+  
+div .appdev{
+  width: 308px;
+  position: relative;
+  height: 370px;
+ background: #fafafa;
+ align-items: center;
+ margin-top: 10px;
+  margin: 30px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0.5px 10px #03cd40;
+  border-radius: 10px;
+  transition: 0.3s ease-in;
+  margin-top: 5%;
+}
+
+div .webdev{
+  width: 308px;
+  position: relative;
+  height: 370px;
+  margin-top: 10px;
+ background: #fafafa;
+  margin: 30px;
+  padding: 20px 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0.5px 10px #0603cd;
+  border-radius: 10px;
+  transition: 0.3s ease-in;
+  margin-top: 5%;
+}
+
+div .logodeign{
+  width: 308px;
+  margin-top: 10px;
+  position: relative;
+  align-items: center;
+  height: 370px;
+ background: #fafafa;
+  margin: 30px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0.5px 10px #cd0303;
+  border-radius: 10px;
+  transition: 0.3s ease-in;
+  margin-top: 5%;
+}
+
+.servicesec{
+align-items: center;
+margin-top: 10px;
+}
+
+.servicesec img{
+  border-radius: 10px;
+}
+
+.servicesec .servicetit{
+  text-align: center;
+ font-family: georgia;
+ color: black;
+ font-size: 20px;
+ cursor: pointer;
+ margin-top: 10px;
+ margin-bottom: 20px;
+ font-weight: bold;
+ transition: 0.4s ease-in;
+}
+
+.servicetit .introserv{
+  justify-items: center;
+  align-items: center;
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: bold;
+
+}
+
+
+div .logodeign:hover{
+   background-color: #cd0303;
+   color: white;
+  
+}
+div .webdev:hover{
+  background-color: #0603cd;
+ color: white;
+}
+
+div .appdev:hover{
+  background-color: #03cd40;
+  color: white;
+}
+.servicetit:hover{
+  color: white;
+}
